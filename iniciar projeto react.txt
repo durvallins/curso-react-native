@@ -1,0 +1,45 @@
+criando novo projeto:
+npx react-native init NomeDoProjeto
+
+entrar na pasta do projeto criado;
+
+executar para iniciar o projeto:
+
+npx react-native start
+npx react-native run-android
+
+no EXPO após instalar no celular
+já dentro da pasta que quer q fique os projetos, rodar:
+
+criando o projeto (o comando abaixo irá criar o projeto bem 
+como a referida pasta)
+expo init NomeDoProjeto (react-native-com-expo)
+
+inicializando
+npm start
+
+depois prestar atenção ao menu de letras
+
+
+caso o VSCODE não inicialize o index.js, faça:
+crair arquivo manualmente index.js
+depios
+ir até a pasta node_modules>expo>AppEntry.js e copiar o conteúdo do arquivo AppEntry
+e colar na no arquivo index.js recém criado
+
+
+Algo +- assim:
+import registerRootComponent from 'expo/build/launch/registerRootComponent';
+
+import App from '../../src/App';
+
+registerRootComponent(App);
+
+depois ir no arquivo package.json
+alterar o caminho da pasta "main" para:
+"main": "index.js",
+
+depois criar a pasta src na pasta do projeto e mover o arquivo App.js para dentro desta pasta.
+
+e lembrar de importar o arquivo App dentro do index.js
+
