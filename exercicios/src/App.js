@@ -1,9 +1,12 @@
 import React from 'react'
 import { Button, SafeAreaView, StyleSheet } from 'react-native'
-import ParImpar from './components/ParImpar'
 
+import UsuarioLogado from './components/UsuarioLogado'
 
 /*
+import Familia from './components/relacao/Familia'
+import Membro from './components/relacao/Membro'
+import ParImpar from './components/ParImpar'
 import Diferencial from './components/Diferencial'
 //import ContadorV2 from './components/contador/ContadorV2'
 //import Pai from './components/indireta/Pai'
@@ -19,9 +22,22 @@ import Primeiro from './components/Primeiro'
 
 export default () => (
     <SafeAreaView style={style.App}>
-        <ParImpar num={3}/>
+        <UsuarioLogado usuario={ {nome: 'Gui', email: 'gui@gui.com'} }/>
+        <UsuarioLogado usuario={ {nome: 'Ana'} }/>
+        <UsuarioLogado usuario={ {email: 'carlos@empresa.com'} }/>
 
         {/*
+        <Familia >
+            <Membro nome="Bia" sobrenome="Arruda" />
+            <Membro nome="Carlos" sobrenome="Arruda" />
+        </Familia>
+        <Familia >
+            <Membro nome="Ana" sobrenome="Silva" />
+            <Membro nome="Julia" sobrenome="Silva" />
+            <Membro nome="Gui" sobrenome="Silva" />
+            <Membro nome="Rebeca" sobrenome="Silva" />
+        </Familia>
+        <ParImpar num={3}/>
         <Diferencial />
         <ContadorV2 />
         <Pai />
