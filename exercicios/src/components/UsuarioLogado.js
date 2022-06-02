@@ -3,7 +3,8 @@ import { SafeAreaView, Text } from 'react-native'
 import Estilo from './estilo'
 import If from "./If";
 
-export default ({ usuario = {} }) => {
+export default props => {
+    const usuario = props.usuario || {}
     return (
         <>
             <If teste={usuario && usuario.nome && usuario.email}>

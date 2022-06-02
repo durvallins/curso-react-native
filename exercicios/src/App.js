@@ -1,9 +1,13 @@
 import React from 'react'
 import { Button, SafeAreaView, StyleSheet } from 'react-native'
 
-import UsuarioLogado from './components/UsuarioLogado'
+import FlexboxV1 from './components/layout/FlexboxV1'
 
 /*
+import DigiteSeuNome from './components/DigiteSeuNome'
+import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
+import ListaProdutos from './components/produtos/ListaProdutos'
+import UsuarioLogado from './components/UsuarioLogado'
 import Familia from './components/relacao/Familia'
 import Membro from './components/relacao/Membro'
 import ParImpar from './components/ParImpar'
@@ -22,11 +26,15 @@ import Primeiro from './components/Primeiro'
 
 export default () => (
     <SafeAreaView style={style.App}>
+
+        <FlexboxV1 />
+        {/*
+        <DigiteSeuNome />
+        <ListaProdutosV2 />
+        <ListaProdutos />
         <UsuarioLogado usuario={ {nome: 'Gui', email: 'gui@gui.com'} }/>
         <UsuarioLogado usuario={ {nome: 'Ana'} }/>
         <UsuarioLogado usuario={ {email: 'carlos@empresa.com'} }/>
-
-        {/*
         <Familia >
             <Membro nome="Bia" sobrenome="Arruda" />
             <Membro nome="Carlos" sobrenome="Arruda" />
