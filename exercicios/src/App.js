@@ -1,9 +1,13 @@
 import React from 'react'
 import { Button, SafeAreaView, StyleSheet } from 'react-native'
 
-import FlexboxV1 from './components/layout/FlexboxV1'
+import Mega from './components/mega/Mega'
 
 /*
+import FlexboxV4 from './components/layout/FlexboxV4'
+import FlexboxV3 from './components/layout/FlexboxV3'
+import FlexboxV2 from './components/layout/FlexboxV2'
+import FlexboxV1 from './components/layout/FlexboxV1'
 import DigiteSeuNome from './components/DigiteSeuNome'
 import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
 import ListaProdutos from './components/produtos/ListaProdutos'
@@ -27,8 +31,13 @@ import Primeiro from './components/Primeiro'
 export default () => (
     <SafeAreaView style={style.App}>
 
-        <FlexboxV1 />
+        <Mega qtdeNumeros={12} />
+
         {/*
+        <FlexboxV4 />
+        <FlexboxV3 />
+        <FlexboxV2 />
+        <FlexboxV1 />
         <DigiteSeuNome />
         <ListaProdutosV2 />
         <ListaProdutos />

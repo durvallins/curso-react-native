@@ -1,16 +1,14 @@
 import React from 'react'
-import { SafeAreaView, Text } from 'react-native'
+import { View, StyleSheet } from 'react-native'
+
 
 export default props => {
     const lado = props.lado || 50
     return (
-        <SafeAreaView style={{
+        <View style={{
             height: lado,
             width: lado,
             backgroundColor: props.cor || '#000'
         }} />
-
     )
 }
-
-
