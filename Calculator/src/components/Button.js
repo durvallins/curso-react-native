@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     width: Dimensions.get('window').width / 4,
     padding: 20,
     backgroundColor: '#f0f0f0',
-    textAlign: 'center'
+    textAlign: 'center',
     borderWidth: 1,
     borderColor: '#888'
   }
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
 export default props => {
   return (
     <TouchableHighlight onPress={props.onClick}>
-      <Text style={style.button}>{props.label}</Text>
+      <Text style={styles.button}>{props.label}</Text>
     </TouchableHighlight>
   )
 }
