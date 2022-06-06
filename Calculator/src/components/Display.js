@@ -2,7 +2,8 @@ import react from 'react';
 import {
     StyleSheet,
     Text,
-    SafeAreaView
+    SafeAreaView,
+    View
 } from 'react-native'
 
 const styles = StyleSheet.create({
@@ -14,13 +15,13 @@ const styles = StyleSheet.create({
         alignItems: 'flex-end',
     },
     displayValue: {
-        fontSize: 60,
+        fontSize: 55,
         color: '#fff',
     }
 })
 
 export default props =>
-    <SafeAreaView style={styles.display}>
+    <View style={styles.display}>
         <Text style={styles.displayValue}
             numberOfLines={1}>{props.value}</Text>
-    </SafeAreaView>
+    </View>
