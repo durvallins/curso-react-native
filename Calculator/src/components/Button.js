@@ -3,7 +3,7 @@ import { StyleSheet, Text, Dimensions, TouchableHighlight } from "react-native";
 
 const styles = StyleSheet.create({
     button: {
-        fontSize: 30,
+        fontSize: 40,
         height: Dimensions.get("window").width / 4,
         width: Dimensions.get("window").width / 4,
         padding: 20,
@@ -30,7 +30,7 @@ export default (props) => {
     if (props.triple) stylesButton.push(styles.buttonTriple);
     if (props.operation) stylesButton.push(styles.operationButton);
     return (
-        <TouchableHighlight onPress={props.onClick}>
+        <TouchableHighlight onPress={() => props.onClick(props.label)}>
             <Text style={stylesButton}>{props.label}</Text>
         </TouchableHighlight>
     );
