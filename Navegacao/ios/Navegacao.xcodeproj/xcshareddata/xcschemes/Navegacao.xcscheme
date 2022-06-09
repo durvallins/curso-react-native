@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "Navegacao.app"
-               BlueprintName = "Navegacao"
-               ReferencedContainer = "container:Navegacao.xcodeproj">
+               BuildableName = "navegacao.app"
+               BlueprintName = "navegacao"
+               ReferencedContainer = "container:navegacao.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "NavegacaoTests.xctest"
-               BlueprintName = "NavegacaoTests"
-               ReferencedContainer = "container:Navegacao.xcodeproj">
+               BuildableName = "navegacaoTests.xctest"
+               BlueprintName = "navegacaoTests"
+               ReferencedContainer = "container:navegacao.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Navegacao.app"
-            BlueprintName = "Navegacao"
-            ReferencedContainer = "container:Navegacao.xcodeproj">
+            BuildableName = "navegacao.app"
+            BlueprintName = "navegacao"
+            ReferencedContainer = "container:navegacao.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Navegacao.app"
-            BlueprintName = "Navegacao"
-            ReferencedContainer = "container:Navegacao.xcodeproj">
+            BuildableName = "navegacao.app"
+            BlueprintName = "navegacao"
+            ReferencedContainer = "container:navegacao.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
