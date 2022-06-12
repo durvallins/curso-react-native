@@ -5,7 +5,7 @@ import PassoStack from '../components/PassoStack';
 export default props => {
     return (
             <TextoCentral corFundo='#e53935'>
-                Tela A
+                Tela A 
             </TextoCentral>
     )
 }
