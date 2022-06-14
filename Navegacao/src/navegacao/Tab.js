@@ -7,11 +7,11 @@ import TelaC from '../views/TelaC';
 const Tab = createBottomTabNavigator()
 
 export default props => (
-    <Tab.Navigator tabBarOptions = {
+    <Tab.Navigator tabBarOptions={{
         activeTintColor: 'red',
-            inactiveTintColor: 'blue',
-                labelStyle: { fontSize: 30 }
-    }>
+        inactiveTintColor: 'blue',
+        labelStyle: { fontSize: 30 }
+    }} initialRouteName="TelaB">
         <Tab.Screen name="TelaA" component={TelaA} />
         <Tab.Screen name="TelaB" component={TelaB} />
         <Tab.Screen name="TelaC" component={TelaC} />
