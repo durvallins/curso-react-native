@@ -1,0 +1,39 @@
+Atualização da lib react-navigation
+Este é um aviso importante sobre a react-navigation que vamos utilizar no próximo vídeo.
+
+
+Caso deseje utilizar a versão que eu utilizo nas aulas, execute o seguintes comandos (recomendado):
+
+npm uninstall -S react-navigation
+npm install -s react-navigation@3.0.9
+
+A lib mudou um pouquinho desde que gravei a aula e agora é necessário instalar o react-navigation-stack além do react-navigation.
+
+Em vez do StackNavigator que verá no vídeo, você utilizará o createStackNavigator importado da lib react-navigation-stack.
+
+import { createStackNavigator } from 'react-navigation-stack';
+
+Do react-navigation utilizaremos o createAppContainer. Código completo:
+
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+
+import PeoplePage from './src/pages/PeoplePage';
+
+
+const AppNavigator = createStackNavigator({
+  Main: {
+    screen: PeoplePage
+  }
+});
+
+
+const AppContainer = createAppContainer(AppNavigator);
+
+
+export default AppContainer;
+
+
+Exemplo na documentação do react-navigation atualizada:
+
+https://reactnavigation.org/docs/en/hello-react-navigation.html#creating-a-stack-navigator
