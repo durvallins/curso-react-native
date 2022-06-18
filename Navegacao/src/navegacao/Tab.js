@@ -15,17 +15,17 @@ export default props => (
                 let iconName
 
                 switch (route.name) {
-                    case TelaA:
+                    case 'TelaA':
                         iconName = focused
                             ? 'ios-information-circle'
                             : 'ios-information-circle-outline'
                         break;
-                    case TelaB:
+                    case 'TelaB':
                         iconName = focused
                             ? 'ios-information-circle'
                             : 'ios-information-circle-outline'
                         break;
-                    case TelaC:
+                    case 'TelaC':
                         iconName = focused ? 'ios-list-box' : 'ios-list'
                         break;
                 }
